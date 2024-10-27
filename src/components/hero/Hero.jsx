@@ -5,7 +5,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import phone from "../../assets/some.png"
 import tv from "../../assets/tv.png"
+import phones from "../../assets/phones.png"
 const Hero = () => {
     const progressCircle = useRef(null);
     const progressContent = useRef(null);
@@ -48,13 +50,27 @@ const Hero = () => {
                     <SwiperSlide>
                         <div className="slide">
                             <div className="slide__text">
-                                <p className='price'>Save up to $1,400</p>
-                                <h2>Our brightest idea</h2>
-                                <p className='descp'>Get up to $1400 trade-in credit towards Galaxy Z Flipó or up to $150 off without trade-in. Plus, get $100 off select colors and 30% off Galaxy Watch Ultra</p>
+                            <p className='price'>Enjoy discounts up to $300</p>
+                            <h2>Your next adventure awaits</h2>
+                            <p className='descp'>Get up to $300 off when you book your vacation package or save $50 on last-minute deals. Plus, receive complimentary upgrades on select hotel stays.</p>
+
                                 <button>But Now</button>
                             </div>
                             <div className="slide__image">
-                                <img src={tv}/>
+                                <img src={phone}/>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slide">
+                            <div className="slide__text">
+                            <p className='price'>Enjoy discounts up to $300</p>
+                            <h2>Do not miss out!</h2>
+                            <p className='descp'>Get up to $700 off when you book your vacation package or save $50 on last-minute deals. Plus, receive complimentary upgrades on select hotel stays.</p>
+                            <button>But Now</button>
+                            </div>
+                            <div className="slide__image">
+                                <img src={phones}/>
                             </div>
                         </div>
                     </SwiperSlide>

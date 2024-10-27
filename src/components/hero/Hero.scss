@@ -73,16 +73,34 @@ transform: rotate(-90deg);
     height: 100%;
     width: 100%;
     padding: 0 50px;
+    @media(max-width: 1000px){
+        flex-direction: column;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
     &__text{
         text-align: left;
         h2{
             font-size: 56px;
+            @media(max-width: 500px){
+                font-size: 24px;
+            }
         }
         .descp{
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
+            @media(max-width: 500px){
+                font-size: 14px;
+            }
         }
         p{
             margin: 10px 0;
+            @media(max-width: 500px){
+                font-size: 14px;
+            }
         }
         .price{
             font-weight: 500;
