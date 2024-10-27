@@ -7,6 +7,7 @@ import Products from './components/products/Products'
 import Banner from './components/banner/Banner'
 import tv from "./assets/model.jpg"
 import kitchen from "./assets/kitchen.png"
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       image={kitchen}
       customClass="products new-color"
     />
+    <Footer/>
     </>
   )
 }
